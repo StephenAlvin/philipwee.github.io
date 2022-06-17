@@ -40,7 +40,7 @@ export function MainPageDesktop() {
             Cooking Recipes
           </a>
           <Link
-            to="articles"
+            to="/articles"
             className="flex-1 text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
           >
             Articles
@@ -96,7 +96,7 @@ export function MainPageDesktop() {
             </p>
             <div className="absolute inline-flex flex-col items-start justify-start left-[210px] top-[9px]">
               <Link
-                to="articles/quit-school"
+                to="/articles/quit-school"
                 className="font-Inter font-bold text-center text-Pearl inline text-[32px] leading-[normal]"
               >
                 Quit School
@@ -134,7 +134,7 @@ export function MainPageDesktop() {
             </p>
             <div className="absolute inline-flex flex-col items-start justify-start left-[210px] top-[9px]">
               <Link
-                to="articles/ten-mins-yc"
+                to="/articles/ten-mins-yc"
                 className="font-Inter font-bold text-center text-Pearl inline text-[32px] leading-[normal]"
               >
                 10 mins in Y Combinator
@@ -155,12 +155,12 @@ export function MainPageDesktop() {
         </div>
       </div>
       <div className="py-9 w-full gap-6 inline-flex flex-col items-start justify-start pl-[72px] pr-[72px]">
-        <Link
-          to="https://www.firejet.io"
+        <a
+          href="https://www.firejet.io"
           className="font-Inter text-5xl font-extralight text-white inline tracking-[-0.96px] leading-[normal]"
         >
           My Startup - FireJet
-        </Link>
+        </a>
         <div className="w-[166px] h-[0] outline outline-1 outline-[rgba(242,242,242,1)]"></div>
         <div className="w-full">
           <p className="text-xl font-light text-white inline font-['Quicksand'] leading-[normal]">
@@ -276,7 +276,7 @@ export function MainPageMobile() {
             Cooking Recipes
           </a>
           <Link
-            to="articles"
+            to="/articles"
             className="flex-1 text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
           >
             Articles

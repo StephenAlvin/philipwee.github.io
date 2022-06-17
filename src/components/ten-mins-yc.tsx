@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TenMinsYC() {
   return (
-    <div className="p-2.5 gap-2.5 bg-Onyx inline-flex flex-col items-center justify-start w-full">
+    <div className="p-2.5 gap-2.5 bg-Onyx inline-flex flex-col items-center justify-start w-full pb-10">
       <div className="max-w-6xl">
         <p className="font-Inter font-bold text-white inline text-[40px] leading-[normal]">
           10 Mins in Y Combinator

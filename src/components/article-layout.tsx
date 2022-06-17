@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 //import styles 👇
 import "react-modern-drawer/dist/index.css";
 import ArticleSidebar from "./article-sidebar";
 
-interface ArticleLayoutProps {
-  children: React.ReactNode;
-}
-
-export default function ArticleLayout(props: ArticleLayoutProps) {
+export default function ArticleLayout() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
@@ -24,8 +20,7 @@ export default function ArticleLayout(props: ArticleLayoutProps) {
       </Drawer>
       <div className="relative">
         <MenuButton onClick={() => setDrawerOpen(true)} />
-
-        {props.children}
+        <Outlet />
       </div>
     </>
   );
@@ -39,7 +34,7 @@ function MenuButton(props: MenuButtonProps) {
   return (
     <button
       onClick={props.onClick}
-      className="absolute top-2 left-2 rounded-lg w-10 h-10 p-2 gap-2.5 inline-flex flex-row items-center justify-center bg-[rgba(35,34,35,1)]"
+      className="fixed left-5 bottom-5 rounded-lg w-10 h-10 p-2 gap-2.5 inline-flex flex-row items-center justify-center bg-[rgba(35,34,35,1)]"
     >
       <div className="flex-1 h-6 w-6">
         <svg
@@ -83,7 +78,7 @@ function Header() {
           Cooking Recipes
         </a>
         <Link
-          to="articles"
+          to="/articles"
           className="flex-1 text-xs font-medium text-[rgba(255,127,9,1)] inline font-['Quicksand'] leading-[normal]"
         >
           Articles

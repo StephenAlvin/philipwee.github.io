@@ -1,24 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const activeStyle = { color: "rgba(255,127,9,1)" };
+const inactiveStyle = { color: "rgba(242,242,242,1)" };
 
 export default function ArticleSidebar() {
   return (
     <div className="p-6 inline-flex flex-col items-start justify-start w-[250px] h-full bg-[rgba(35,34,35,1)]">
       <div className="w-full gap-2 inline-flex flex-col items-start justify-start flex-grow h-[847px]">
-        <Link
-          to="articles/quit-school"
-          className="text-xs font-medium inline font-['Quicksand'] leading-[normal] text-[rgba(255,127,9,1)]"
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+          to="/articles/quit-school"
+          className="text-xs font-medium inline font-['Quicksand'] leading-[normal] "
         >
           Why I Quit School
-        </Link>
-        <Link
-          to="articles/ten-mins-yc"
-          className="text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
+        </NavLink>
+        <NavLink
+          style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+          to="/articles/ten-mins-yc"
+          className="text-xs font-medium inline font-['Quicksand'] leading-[normal]"
         >
           10 Mins in Y Combinator
-        </Link>
+        </NavLink>
       </div>
-      <div className="w-full inline-flex flex-row items-start justify-between">
+      {/* TODO: Make these icons appear but I'm way too lazy */}
+      <div className="w-full inline-flex flex-row items-start justify-between hidden">
         <div className="w-6 h-6 relative">
           <div className="w-6 absolute top-1 h-[16.01px] left-[0]">
             <div className="absolute left-0 right-[-4.16%] top-[0.03%] bottom-[-12.46%]">

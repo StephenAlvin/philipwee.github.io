@@ -42,12 +42,12 @@ export default function TimelineComponentMobile(
       {props.variant === "VARIANT" && (
         <div className="relative w-[187px] h-[162px] gap-[26px]">
           <div className="absolute left-0.5 inline-flex flex-col items-start justify-start w-[200px] top-[69px]">
-            <Link
-              to="https://www.firejet.io"
+            <a
+              href="https://www.firejet.io"
               className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]"
             >
               Started Firejet
-            </Link>
+            </a>
             <p className="w-full text-xs font-medium text-Grey inline font-['Quicksand'] leading-[normal]">
               Wow enTRepREnuER, foUNDeR
             </p>
@@ -106,7 +106,7 @@ export default function TimelineComponentMobile(
         <div className="relative w-[187px] h-[162px] gap-[26px]">
           <div className="absolute left-0.5 inline-flex flex-col items-start justify-start w-[200px] top-[69px]">
             <Link
-              to="articles/quit-school"
+              to="/articles/quit-school"
               className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]"
             >
               Quit School
