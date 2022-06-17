@@ -7,7 +7,7 @@ import ArticleLayout from "components/article-layout";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-website">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/articles" element={<ArticleLayout />}>
