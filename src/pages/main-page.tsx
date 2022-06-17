@@ -45,16 +45,19 @@ export function MainPageDesktop() {
           >
             Articles
           </Link>
-          <div className="w-6 h-6 relative">
+          <a
+            href="https://www.youtube.com/channel/UCXFyio7c5EWBGLknUJZjIzQ"
+            className="w-6 h-6 relative"
+          >
             <div className="w-6 absolute top-1.5 h-[16.01px] left-[0]">
               <div>
                 <YoutubeLogo />
               </div>
             </div>
-          </div>
-          <div className="w-6 h-6">
+          </a>
+          <a href="https://www.linkedin.com/in/philip-wee/" className="w-6 h-6">
             <LinkedInLogo />
-          </div>
+          </a>
         </div>
       </div>
       <div className="inline-flex w-full h-full">
@@ -131,7 +134,7 @@ export function MainPageDesktop() {
             </p>
             <div className="absolute inline-flex flex-col items-start justify-start left-[210px] top-[9px]">
               <Link
-                to="articles/10-mins-yc"
+                to="articles/ten-mins-yc"
                 className="font-Inter font-bold text-center text-Pearl inline text-[32px] leading-[normal]"
               >
                 10 mins in Y Combinator
@@ -191,21 +194,24 @@ export function MainPageDesktop() {
           </p>
         </div>
         <div className="gap-2 inline-flex flex-row items-start justify-start">
-          <div className="w-6 h-6 relative">
+          <a
+            href="https://www.youtube.com/channel/UCXFyio7c5EWBGLknUJZjIzQ"
+            className="w-6 h-6 relative"
+          >
             <div className="w-6 absolute top-1 h-[16.01px] left-[0]">
               <div className="absolute left-0 right-[-4.16%] top-[0.03%] bottom-[-12.46%]">
                 <YoutubeLogo />
               </div>
             </div>
-          </div>
-          <div className="w-6 h-6">
+          </a>
+          <a href="https://www.linkedin.com/in/philip-wee/" className="w-6 h-6">
             <LinkedInLogo />
-          </div>
-          <div className="w-6 h-6 relative">
+          </a>
+          <a href="https://www.firejet.io" className="w-6 h-6 relative">
             <div className="absolute right-0 bottom-0 left-[8.33%] top-[8.33%]">
               <WebsiteLogo />
             </div>
-          </div>
+          </a>
           <a
             href="https://api.whatsapp.com/send?phone=6584381245"
             className="w-6 h-6"
@@ -228,7 +234,10 @@ export function MainPageDesktop() {
             P.S. I stole this template from someone else
           </p>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=6584381245" className="rounded px-6 py-4 border-solid border gap-2.5 inline-flex flex-row items-center justify-center w-[350px] drop-shadow-lg border-[rgba(98,186,27,1)] bg-[rgba(63,142,0,1)]">
+        <a
+          href="https://api.whatsapp.com/send?phone=6584381245"
+          className="rounded px-6 py-4 border-solid border gap-2.5 inline-flex flex-row items-center justify-center w-[350px] drop-shadow-lg border-[rgba(98,186,27,1)] bg-[rgba(63,142,0,1)]"
+        >
           <p className="text-sm font-bold text-white inline font-['IBM_Plex_Mono'] leading-[normal]">
             Wanna Touch?
           </p>
@@ -248,28 +257,43 @@ export function MainPageMobile() {
     <div className="w-full inline-flex flex-col items-start justify-start bg-[rgba(35,34,35,1)]">
       <div className="w-full p-2.5 gap-2.5 inline-flex flex-col items-start justify-start">
         <div className="w-full gap-2 inline-flex flex-row items-center justify-start">
-          <p className="text-xs font-medium inline font-['Quicksand'] leading-[normal] text-[rgba(255,127,9,1)]">
+          <Link
+            to="/"
+            className="text-xs font-medium inline font-['Quicksand'] leading-[normal] text-[rgba(255,127,9,1)]"
+          >
             Home
-          </p>
-          <p className="text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]">
+          </Link>
+          <a
+            href="https://www.firejet.io"
+            className="text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
+          >
             FireJet
-          </p>
-          <p className="text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]">
+          </a>
+          <a
+            href="https://lush-maize-353.notion.site/Recipes-40d8073dcfd443c1b653bf8cfe9ac01b"
+            className="text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
+          >
             Cooking Recipes
-          </p>
-          <p className="flex-1 text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]">
+          </a>
+          <Link
+            to="articles"
+            className="flex-1 text-xs font-medium text-Pearl inline font-['Quicksand'] leading-[normal]"
+          >
             Articles
-          </p>
-          <div className="w-6 h-6 relative">
+          </Link>
+          <a
+            href="https://www.youtube.com/channel/UCXFyio7c5EWBGLknUJZjIzQ"
+            className="w-6 h-6 relative"
+          >
             <div className="w-6 absolute top-1.5 h-[16.01px] left-[0]">
               <div>
                 <YoutubeLogo />
               </div>
             </div>
-          </div>
-          <div className="w-6 h-6">
+          </a>
+          <a href="https://www.linkedin.com/in/philip-wee/" className="w-6 h-6">
             <LinkedInLogo />
-          </div>
+          </a>
         </div>
       </div>
       <div className="py-6 w-full gap-2.5 bg-Midnight inline-flex flex-col items-center justify-center pl-[65px] pr-[65px]">
@@ -343,25 +367,34 @@ export function MainPageMobile() {
             </p>
           </div>
           <div className="gap-2 inline-flex flex-row items-start justify-start">
-            <div className="w-6 h-6 relative">
+            <a
+              href="https://www.youtube.com/channel/UCXFyio7c5EWBGLknUJZjIzQ"
+              className="w-6 h-6 relative"
+            >
               <div className="w-6 absolute top-1 h-[16.01px] left-[0]">
                 <div className="absolute left-0 right-[-4.16%] top-[0.03%] bottom-[-12.46%]">
                   <YoutubeLogo />
                 </div>
               </div>
-            </div>
-            <div className="w-6 h-6">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/philip-wee/"
+              className="w-6 h-6"
+            >
               <LinkedInLogo />
-            </div>
-            <div className="w-6 h-6 relative">
+            </a>
+            <a href="https://www.firejet.io" className="w-6 h-6 relative">
               <div className="absolute right-0 bottom-0 left-[8.33%] top-[8.33%]">
                 <WebsiteLogo />
               </div>
-            </div>
+            </a>
 
-            <div className="w-6 h-6">
+            <a
+              href="https://api.whatsapp.com/send?phone=6584381245"
+              className="w-6 h-6"
+            >
               <WhatsappLogo />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -379,13 +412,16 @@ export function MainPageMobile() {
             P.S. I stole this template from someone else
           </p>
         </div>
-        <div className="rounded px-6 py-4 border-solid border gap-2.5 inline-flex flex-row items-center justify-center w-[300px] drop-shadow-lg border-[rgba(98,186,27,1)] bg-[rgba(63,142,0,1)]">
+        <a
+          href="https://api.whatsapp.com/send?phone=6584381245"
+          className="rounded px-6 py-4 border-solid border gap-2.5 inline-flex flex-row items-center justify-center w-[300px] drop-shadow-lg border-[rgba(98,186,27,1)] bg-[rgba(63,142,0,1)]"
+        >
           <div className="gap-2.5 inline-flex flex-row items-center justify-start">
             <p className="text-sm font-bold text-white inline font-['IBM_Plex_Mono'] leading-[normal]">
               Wanna Touch?
             </p>
           </div>
-        </div>
+        </a>
       </div>
       <div className="px-2.5 py-6 w-full gap-2.5 bg-Onyx inline-flex flex-col items-start justify-start">
         <p className="w-full text-sm text-center inline font-['IBM_Plex_Mono'] tracking-[0.16px] leading-[normal] text-[rgba(156,156,156,1)]">

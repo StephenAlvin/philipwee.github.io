@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function TimelineComponentMobile(
   props: TimelineComponentMobileInterface
@@ -41,9 +42,12 @@ export default function TimelineComponentMobile(
       {props.variant === "VARIANT" && (
         <div className="relative w-[187px] h-[162px] gap-[26px]">
           <div className="absolute left-0.5 inline-flex flex-col items-start justify-start w-[200px] top-[69px]">
-            <p className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]">
+            <Link
+              to="https://www.firejet.io"
+              className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]"
+            >
               Started Firejet
-            </p>
+            </Link>
             <p className="w-full text-xs font-medium text-Grey inline font-['Quicksand'] leading-[normal]">
               Wow enTRepREnuER, foUNDeR
             </p>
@@ -83,9 +87,12 @@ export default function TimelineComponentMobile(
       {props.variant === "VARIANT1" && (
         <div className="relative w-[187px] h-[162px] gap-[26px]">
           <div className="absolute left-0.5 inline-flex flex-col items-start justify-start w-[200px] top-[69px]">
-            <p className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]">
+            <Link
+              to="articles/10-mins-yc"
+              className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]"
+            >
               10 mins in Y Combinator
-            </p>
+            </Link>
             <p className="w-full text-xs font-medium text-Grey inline font-['Quicksand'] leading-[normal]">
               Turns out getting the interview doesn’t mean you get in
             </p>
@@ -98,9 +105,12 @@ export default function TimelineComponentMobile(
       {props.variant === "VARIANT2" && (
         <div className="relative w-[187px] h-[162px] gap-[26px]">
           <div className="absolute left-0.5 inline-flex flex-col items-start justify-start w-[200px] top-[69px]">
-            <p className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]">
+            <Link
+              to="articles/quit-school"
+              className="w-full font-Inter font-bold text-Pearl inline text-[32px] leading-[normal]"
+            >
               Quit School
-            </p>
+            </Link>
             <p className="w-full text-xs font-medium text-Grey inline font-['Quicksand'] leading-[normal]">
               Why I sacrificed my US/China scholarship
             </p>
