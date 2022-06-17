@@ -10,7 +10,7 @@ export default function MainPage() {
         <MainPageDesktop />
       </div>
       <div className="md:hidden">
-        <MainPageMobile />;
+        <MainPageMobile />
       </div>
     </>
   );
@@ -130,7 +130,7 @@ export function MainPageDesktop() {
           </div>
           <div className="relative w-[600px] h-[69px] gap-[26px]">
             <p className="absolute text-6xl tracking-tighter text-center text-Pearl inline left-[0] top-[0] font-['Mohave'] leading-[normal]">
-              01 SEP 21
+              29 APR 21
             </p>
             <div className="absolute inline-flex flex-col items-start justify-start left-[210px] top-[9px]">
               <Link
@@ -349,18 +349,24 @@ export function MainPageMobile() {
               <br />
               You can see the original Figma Design&nbsp;
             </p>
-            <p className="text-xl font-light underline text-white inline font-['Quicksand'] leading-[normal]">
+            <a
+              href="https://www.figma.com/file/0Xja9fAv6yxWVHkGPFkBeY/Philip's-Portfolio-Website?node-id=2%3A2"
+              className="text-xl font-light underline text-white inline font-['Quicksand'] leading-[normal]"
+            >
               here
-            </p>
+            </a>
             <p className="text-xl font-light text-white inline font-['Quicksand'] leading-[normal]">
               .
               <br />
               <br />
               Alternatively, view the source code for the website&nbsp;
             </p>
-            <p className="text-xl font-light underline text-white inline font-['Quicksand'] leading-[normal]">
+            <a
+              href="https://github.com/PhilipWee/portfolio-website"
+              className="text-xl font-light underline text-white inline font-['Quicksand'] leading-[normal]"
+            >
               here
-            </p>
+            </a>
             <p className="text-xl font-light text-white inline font-['Quicksand'] leading-[normal]">
               . (If you want to submit a PR to help me update my life story
               sure)

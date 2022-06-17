@@ -98,7 +98,7 @@ export default function TimelineComponentMobile(
             </p>
           </div>
           <p className="absolute text-6xl tracking-tighter text-center text-Grey inline font-['Mohave'] leading-[normal]">
-            01 SEP 21
+            29 APR 21
           </p>
         </div>
       )}
